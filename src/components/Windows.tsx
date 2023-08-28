@@ -1,4 +1,4 @@
-import AboutMe from './AboutMe';
+import AboutMe from './HomePage';
 
 function Windows() {
     return (
