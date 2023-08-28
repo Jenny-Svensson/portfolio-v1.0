@@ -1,12 +1,12 @@
 import './App.css'
-import AboutMe from './components/AboutMe'
+import Windows from './components/Windows'
 
 function App() {
 
 
   return (
     <>
-    <AboutMe />
+    <Windows />
     </>
   )
 }
