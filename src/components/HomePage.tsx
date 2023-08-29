@@ -1,8 +1,10 @@
 import { useState } from "react";
 import AboutMeWindow from './AboutMeWindow'
+import ProjectWindow from './ProjectWindow'
 
 function AboutMe() {
   const [openAboutMe, setOpenAboutMe] = useState(false);
+  const [openProject, setopenProject] = useState(false);
 
   const openAboutMeWindow = () => {
     setOpenAboutMe(true);
@@ -10,6 +12,14 @@ function AboutMe() {
 
   const closeAboutMeWindow = () => {
     setOpenAboutMe(false);
+  };
+
+  const openProjectWindow = () => {
+    setopenProject(true);
+  }
+
+  const closeProjectWindow = () => {
+    setopenProject(false);
   };
 
 
@@ -34,7 +44,8 @@ function AboutMe() {
           { /** if the value on the left of && is true, the value on the right is evaluated and returned **/ }
             { openAboutMe && ( <AboutMeWindow onClose={closeAboutMeWindow} /> ) } 
             
-          <button>Project</button>
+          <button onClick={openProjectWindow}>Project</button>
+          { openProject && ( <ProjectWindow onClose={closeProjectWindow} /> ) }
           <button>Contact</button>
         </div>
       </div>

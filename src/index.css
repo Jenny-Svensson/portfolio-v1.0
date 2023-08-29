@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:wght@300&display=swap');
 
+
+/* COLOR PALETTE
+#F9F5F6
+#F8E8EE
+#FDCEDF
+#F2BED1
+*/
+
+
 :root {
   font-family: 'Roboto Mono', monospace;
   display: flex;
@@ -98,6 +107,32 @@ h3 {
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.floating-window-project {
+  position: absolute;
+  min-width: 30vw;
+  max-width: auto;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.img-container {
+  height: 200px;
+  width: 200px;
+}
+
 
 
 /* BUTTON */
