@@ -34,7 +34,7 @@ body {
 
 .Greeting-text {
   position: absolute; 
-  top: 0.5vh;
+  top: 0.3vh;
   left: 20vw;
   padding: 0 5px; 
   font-size: 10rem;
@@ -57,7 +57,6 @@ h3 {
 .window {
   max-width: 100%;
   background-color: #ffffff; /* Window content background color */
-  border: 1px solid #000000; /* Window border */
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Window shadow */
 }
@@ -87,6 +86,19 @@ h3 {
 .window-content {
   padding: 10px;
 }
+
+.floating-window-aboutme {
+  position: absolute;
+  min-width: 30vw;
+  max-width: 30vh;
+  top: 60%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 
 /* BUTTON */
 button {

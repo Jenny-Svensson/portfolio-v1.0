@@ -1,12 +1,12 @@
 import './App.css'
-import Windows from './components/Windows'
+import LandingPage from './components/LandingPage'
 
 function App() {
 
 
   return (
     <>
-    <Windows />
+    <LandingPage />
     </>
   )
 }
