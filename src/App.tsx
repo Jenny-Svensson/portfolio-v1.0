@@ -6,8 +6,8 @@ import ContactWindow from './components/ContactWindow';
 
 function App() {
   const [openAboutMe, setOpenAboutMe] = useState(false);
-  const [openProject, setopenProject] = useState(false);
-  const [openContact, setopenContact] = useState(false);
+  const [openProject, setOpenProject] = useState(false);
+  const [openContact, setOpenContact] = useState(false);
 
   const openAboutMeWindow = () => {
     setOpenAboutMe(true);
@@ -18,19 +18,20 @@ function App() {
   };
 
   const openProjectWindow = () => {
-    setopenProject(true);
+    setOpenProject(true);
   }
 
   const closeProjectWindow = () => {
-    setopenProject(false);
+    setOpenProject(true);
+    (false);
   };
 
   const openContactWindow = () => {
-    setopenContact(true);
+    setOpenContact(true);
   }
 
   const closeContactWindow = () => {
-    setopenContact(false);
+    setOpenContact(false);
   };
 
 
