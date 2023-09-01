@@ -22,8 +22,7 @@ function App() {
   }
 
   const closeProjectWindow = () => {
-    setOpenProject(true);
-    (false);
+    setOpenProject(false);
   };
 
   const openContactWindow = () => {
