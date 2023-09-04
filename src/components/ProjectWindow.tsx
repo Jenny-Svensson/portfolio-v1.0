@@ -13,23 +13,23 @@ export default function ProjectWindow({ onClose }: ProjectWindowProps) {
                 <div className="window-content">
                     <div className="project-container">
                         <div className="project-1">
-                            <img src="#" className="img-container" />
-                            <h4>Project 1</h4>
+                            <a href="https://github.com/Jenny-Svensson/blackjack-typescript"><img src="src/assets/img/typescript-blackjack.png" alt="picture of a blackjack board where player starts with two 10s and dealer starts with a 10" className="img-container" /></a>
+                            <h4>Blackjack game</h4>
                         </div>
                         <div className="project-2">
-                            <img src="#" className="img-container" />
-                            <h4>Project 2</h4>
+                        <a href="https://github.com/Jenny-Svensson/bookAPI"><img src="src/assets/img/js-bookfinder.png" className="img-container" /></a>
+                            <h4>Bookfinder</h4>
                         </div>
                         <div className="project-3">
-                            <img src="#" className="img-container" />
-                            <h4>Project 3</h4>
+                        <a href="https://github.com/Jenny-Svensson/passwordGenerator"><img src="src/assets/img/js-passwordgenerator.png" className="img-container" /></a>
+                            <h4>Password generator</h4>
                         </div>
                         <div className="project-4">
-                            <img src="#" className="img-container" />
+                        <a href="#"><img src="#" className="img-container" /></a>
                             <h4>Project 4</h4>
                         </div>
 
-                        <p>Here are some of my projects, please feel free to connect with me on GitHub for more.</p>
+                        <span>These are some of my projects, feel free to check my GitHub for more!</span>
 
                     </div>
                 </div>
