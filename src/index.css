@@ -167,12 +167,15 @@ button {
 
 .contact-container h4 {
   color: #F2BED1; 
-  font-size: 24px; 
+  font-size: 3rem; 
   margin-bottom: 10px; 
+  margin-top: 10px; 
+  font-family: 'Pacifico', cursive;
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.397); 
 }
 
 .contact-container p {
-  color: #F2BED1; 
+  color: #F2BED1; /* Dark text color for better contrast */
   font-size: 16px; 
   line-height: 1.5; 
   display: flex;
@@ -180,14 +183,19 @@ button {
 }
 
 .contact-container p a {
-  color: #F2BED1; 
-  text-decoration: none; 
+  color: #F2BED1;
   margin-left: 10px; 
   margin-right: 10px; 
   transition: color 0.3s; 
 
   &:hover {
-    color: #F8E8EE; 
-    border-bottom: 2px dotted #F2BED1;
+    color: #ff93ba; 
   }
+}
+
+/* Focus state for links */
+.contact-container p a:focus {
+  outline: 2px solid #F2BED1; 
+  outline-offset: 2px; 
+  text-decoration: none;
 }
