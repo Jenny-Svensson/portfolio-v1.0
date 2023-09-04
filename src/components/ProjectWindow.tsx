@@ -24,12 +24,8 @@ export default function ProjectWindow({ onClose }: ProjectWindowProps) {
                         <a href="https://github.com/Jenny-Svensson/passwordGenerator"><img src="src/assets/img/js-passwordgenerator.png" className="img-container" /></a>
                             <h4>Password generator</h4>
                         </div>
-                        <div className="project-4">
-                        <a href="#"><img src="#" className="img-container" /></a>
-                            <h4>Project 4</h4>
-                        </div>
 
-                        <span>These are some of my projects, feel free to check my GitHub for more!</span>
+                        <h4>These are some of my projects, feel free to check my GitHub for more!</h4>
 
                     </div>
                 </div>
