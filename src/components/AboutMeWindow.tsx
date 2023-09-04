@@ -11,6 +11,7 @@ export default function AboutMeWindow({ onClose }: AboutMeWindowProps) {
                     <div className="window-close" onClick={onClose}>X</div>
                 </div>
                 <div className="window-content">
+                <div className="aboutme-container">
                     <p className="AboutMe-text">I'm Jenny Svensson, a dedicated individual on a journey to becoming a Frontend Developer.
                         In my world, nostalgia is a powerful force. I find joy in exploring the past and infusing its essence into my work,
                         creating interfaces that evoke familiar emotions. This blend of modern technology and sentimentality allows me to connect with users on a deeper level.
@@ -20,6 +21,7 @@ export default function AboutMeWindow({ onClose }: AboutMeWindowProps) {
                         <br /><br />
                         Please join me on this exciting journey as I transform code into captivating experiences.
                     </p>
+                </div>
                 </div>
             </div>
         </div>

@@ -15,17 +15,18 @@ export default function ProjectWindow({ onClose }: ContactWindowProps) {
                     <div className="window-close" onClick={onClose}>X</div>
                 </div>
                 <div className="window-content">
-
-                    <h4>Let's talk!</h4>
-
-                    <p>
-                        <FontAwesomeIcon icon={faEnvelope} /> <a href = "mailto: ntlj_@hotmail.com">ntlj_@hotmail.com</a> <br/>
-                        <FontAwesomeIcon icon={faGithub} /> <a href="https://github.com/Jenny-Svensson">Jenny-Svensson</a> <br/>
-                        <FontAwesomeIcon icon={faLinkedin} /> <a href="https://www.linkedin.com/in/jenny-svensson-210376157/">Jenny Svensson</a>
-                    </p>
-
+                    <div className="contact-container">
+                        <h4>Let's talk!</h4>
+                        <p>
+                            <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto: ntlj_@hotmail.com">ntlj_@hotmail.com</a> <br />
+                            <FontAwesomeIcon icon={faGithub} /> <a href="https://github.com/Jenny-Svensson">Jenny-Svensson</a> <br />
+                            <FontAwesomeIcon icon={faLinkedin} /> <a href="https://www.linkedin.com/in/jenny-svensson-210376157/">Jenny Svensson</a>
+                        </p>
                     </div>
+
+
                 </div>
             </div>
+        </div>
     );
 }
