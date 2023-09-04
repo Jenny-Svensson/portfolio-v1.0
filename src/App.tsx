@@ -46,19 +46,19 @@ function App() {
           <div className="Homepage-container">
 
             <span className="Greeting-text">Hello,</span>
+              <h3>
+                My name is <span className='name-text'>Jenny Svensson</span><br/>
+                and I'm a soon-to-be <br/> Frontend Developer<br/>
+                based in Malmö, Sweden.
+              </h3>
 
-            <h3>
-              My name is Jenny Svensson
-              and I'm a soon-to-be Frontend Developer
-              based in Malmö, Sweden.
-            </h3>
+              <img
+                src="src\assets\img\326283497_699215091804477_5216351088715445224_n.jpg"
+                className="AboutMe-img"
+                alt="animated profile picture of me" />
 
-            <img
-              src="src\assets\img\Untitled-1.png"
-              className="AboutMe-img"
-              alt="a shiba dog with japanese theme background with sakura and a mountain" />
-
-            <div>
+          </div>
+          <div className='button-container'>
               <button onClick={openAboutMeWindow}>About me</button>
               { /** if the value on the left of && is true, the value on the right is evaluated and returned **/}
               {openAboutMe && (<AboutMeWindow onClose={closeAboutMeWindow} />)}
@@ -69,7 +69,6 @@ function App() {
               <button onClick={openContactWindow}>Contact</button>
               {openContact && (<ContactWindow onClose={closeContactWindow} />)}
             </div>
-          </div>
         </div>
       </div>
 

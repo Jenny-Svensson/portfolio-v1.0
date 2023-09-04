@@ -29,21 +29,32 @@ body {
 
 /*ABOUT ME*/
 .Homepage-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 0px; 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
+  background-color: #F9F5F6;
 }
 
 .AboutMe-img {
-  max-width: 20rem;
-  max-height: 20rem;
+  max-height: 30vh;
+  width: auto;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  opacity: 0.9;
+  padding: 10px;
+  margin: 30px;
+}
+
+img:hover {
+  transform: scale(1.05); 
 }
 
 .Greeting-text {
   position: absolute; 
-  top: 0.3vh;
+  top: 0;
   left: 20vw;
   padding: 0 5px; 
   font-size: 10rem;
@@ -53,9 +64,16 @@ body {
   -webkit-text-stroke: 3px #F9F5F6; 
 }
 
+.name-text {
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  color: #fa5893;
+  -webkit-text-stroke: 0.4px #000000; 
+}
+
 h3 {
   font-size: 24px;
-  max-width: 22rem;
+  width: 30rem;
   letter-spacing: -1px;
   padding: 10px;
   margin-top: 5rem;
@@ -65,9 +83,9 @@ h3 {
 /*WINDOWS STYLE */
 .window {
   max-width: 100%;
-  background-color: #ffffff; /* Window content background color */
+  background-color: #ffffff; 
   border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Window shadow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .window-header {
@@ -75,7 +93,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #FDCEDF; /* Windows header background color */
+  background-color: #FDCEDF; 
   color: #ffffff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -158,6 +176,7 @@ button {
   text-align: center;
   background-color: #F2BED1;
   color: #FFFFFF;
+  align-items: center;
 }
 
 .contact-container, .aboutme-container, .project-container {
@@ -166,16 +185,16 @@ button {
 }
 
 .contact-container h4 {
-  color: #F2BED1; 
+  color: #fa5893; 
   font-size: 3rem; 
   margin-bottom: 10px; 
   margin-top: 10px; 
   font-family: 'Pacifico', cursive;
-  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.397); 
+  -webkit-text-stroke: 0.4px #000000; 
 }
 
 .contact-container p {
-  color: #F2BED1; /* Dark text color for better contrast */
+  color: #F2BED1; 
   font-size: 16px; 
   line-height: 1.5; 
   display: flex;
@@ -193,9 +212,9 @@ button {
   }
 }
 
-/* Focus state for links */
 .contact-container p a:focus {
   outline: 2px solid #F2BED1; 
   outline-offset: 2px; 
   text-decoration: none;
 }
+
