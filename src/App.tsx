@@ -47,8 +47,8 @@ function App() {
 
             <span className="Greeting-text">Hello,</span>
               <h3>
-                My name is <span className='name-text'>Jenny Svensson</span><br/>
-                and I'm a soon-to-be <br/> Frontend Developer<br/>
+                I'm <span className='name-text'>Jenny Svensson</span><br/>
+                a soon-to-be Frontend Developer <br/>
                 based in Malmö, Sweden.
               </h3>
 
